@@ -2,8 +2,11 @@ function notify (url) {
   chrome.notifications.create({
     'type': 'basic',
     'iconUrl': 'icons/froggie128.png',
-    'title': 'Submitting URI to archive:',
-    'message': url
+    'title': 'Submit URI to archive',
+    'message': url//,
+    //'buttons': [{'title': 'Archive Now'}, {'title': 'ipsum'}],
+    //'items': [{'title': 'lorem', 'message': 'ipsum'}, {'title': 'foo', 'message': 'bar'}],
+    //'requireInteraction': true
   })
 }
 
